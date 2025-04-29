@@ -1,0 +1,5 @@
+discord.py>=2.0.0
+yt-dlp
+faster-whisper
+pytube
+requests
