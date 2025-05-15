@@ -104,6 +104,12 @@ async def reboot(ctx):
     # Relance le script principal avec les mêmes arguments
     os.execv(sys.executable, [sys.executable] + sys.argv)
 
+@bot.command()
+async def test(ctx):
+    """Commande pour redémarrer le bot à distance. Seul le propriétaire peut l'utiliser."""
+    await ctx.send("$ima Date a Live")
+
+
 
 @bot.command()
 @commands.has_permissions(manage_messages=True)
